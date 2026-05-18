@@ -1,0 +1,4 @@
+node_modules/
+telegram-settings.js
+.env
+.DS_Store

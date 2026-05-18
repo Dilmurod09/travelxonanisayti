@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title id="page-title">TravelX — авторские туры и круизы из Узбекистана</title>
+    <meta
+      id="page-desc"
+      name="description"
+      content="Персональный подбор туров, отелей, перелётов и круизов из Ташкента. Продуманные маршруты по Европе, Ближнему Востоку и морю с прозрачной сметой."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="pnglogos/icon@4x.png" />
+    <script src="i18n.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contact" data-i18n="skip">К форме заявки</a>
+
+    <header class="site-header" id="top">
+      <div class="wrap site-header__inner">
+        <a
+          class="logo"
+          href="#top"
+          data-i18n-aria="logo_aria"
+          aria-label="TravelX — на главную"
+        >
+          <img
+            class="logo__mark"
+            src="pnglogos/xred@4x.png"
+            width="44"
+            height="44"
+            alt=""
+            decoding="async"
+          />
+          <span class="logo__text">travel<span class="logo__x">x</span></span>
+        </a>
+        <div class="site-header__tools">
+          <div
+            class="lang-switch"
+            role="group"
+            data-i18n-aria="lang_aria"
+            aria-label="Язык сайта"
+          >
+            <button type="button" class="lang-switch__btn" data-lang="ru" aria-pressed="true">RU</button>
+            <button type="button" class="lang-switch__btn" data-lang="uz" aria-pressed="false">UZ</button>
+          </div>
+          <nav class="nav" data-i18n-aria="nav_aria" aria-label="Основное меню">
+            <a href="#directions" data-i18n="nav_directions">Маршруты</a>
+            <a href="#cruises" data-i18n="nav_cruises">Круизы</a>
+            <a href="#video" data-i18n="nav_video">Видео</a>
+            <a href="#contact" class="nav__cta" data-i18n="nav_cta">Оставить заявку</a>
+          </nav>
+          <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-mobile">
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+          </button>
+        </div>
+      </div>
+      <div class="nav-mobile" id="nav-mobile" hidden>
+        <a href="#directions" data-i18n="nav_directions">Маршруты</a>
+        <a href="#cruises" data-i18n="nav_cruises">Круизы</a>
+        <a href="#video" data-i18n="nav_video">Видео</a>
+        <a href="#contact" data-i18n="nav_cta">Оставить заявку</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="wrap hero__grid">
+          <div class="hero__text">
+            <p class="hero__eyebrow" data-i18n="hero_eyebrow">Из Ташкента — в мир без лишней суеты</p>
+            <h1 id="hero-title" class="hero__title" data-i18n="hero_title">
+              Превращаем ваши мечты в реальные маршруты и приятные воспоминания
+            </h1>
+            <p class="hero__lead" data-i18n="hero_lead">
+              Подберём маршрут под ваш ритм: перелёты, отели в удачных локациях, трансферы, круизы,
+              визовую поддержку и помощь с документами. Вы получаете понятный план и честную смету
+              до оплаты.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contact" data-i18n="hero_btn1">Подобрать тур</a>
+              <a class="btn btn--outline" href="#directions" data-i18n="hero_btn2">Выбрать маршрут</a>
+            </div>
+            <ul class="hero__stats">
+              <li>
+                <strong data-i18n="hero_s1_k">12+ лет</strong>
+                <span data-i18n="hero_s1_t">создаём поездки для путешественников из Узбекистана</span>
+              </li>
+              <li>
+                <strong data-i18n="hero_s2_k">Европа · Восток · море</strong>
+                <span data-i18n="hero_s2_t">городские туры, пляжный отдых и круизы на лайнерах</span>
+              </li>
+              <li>
+                <strong data-i18n="hero_s3_k">Личный менеджер</strong>
+                <span data-i18n="hero_s3_t">держит маршрут под контролем от заявки до возвращения</span>
+              </li>
+            </ul>
+          </div>
+          <div class="hero__visual">
+            <img
+              src="images/adam-gonzales-A2MkCqYrSUw-unsplash.jpg"
+              alt="Чемодан в аэропорту перед путешествием"
+              width="2400"
+              height="3598"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tint" id="directions" aria-labelledby="dir-title">
+        <div class="wrap">
+          <header class="section__head">
+            <h2 id="dir-title" data-i18n="dir_title">Популярные сценарии путешествий</h2>
+            <p class="section__sub" data-i18n="dir_sub">
+              Выберите настроение поездки, а мы соберём маршрут вокруг ваших дат, бюджета и
+              привычного темпа отдыха.
+            </p>
+          </header>
+          <div class="grid cards">
+            <article class="card">
+              <h3 data-i18n="card1_t">Европейские каникулы</h3>
+              <p data-i18n="card1_p">
+                Рим и Флоренция, Париж и Лазурный берег, Барселона и Валенсия, Альпы и
+                рождественские ярмарки — с удобной логистикой и отелями там, где действительно
+                приятно жить.
+              </p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="card2_t">Ближний Восток с комфортом</h3>
+              <p data-i18n="card2_p">
+                Дубай, Абу-Даби, Доха и Оман: пляж, город, гастрономия, шопинг или деловая поездка.
+                Подберём район, отель и перелёт под цель путешествия.
+              </p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="card3_t">Короткий отпуск рядом</h3>
+              <p data-i18n="card3_p">
+                Стамбул на выходные, Каппадокия с воздушными шарами, море и шопинг — насыщенный
+                маршрут без долгих перелётов и сложной подготовки.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--places" id="places" aria-labelledby="places-title">
+        <div class="wrap">
+          <header class="section__head">
+            <h2 id="places-title" data-i18n="places_title">Маршруты, которые хочется сохранить в кадре</h2>
+            <p class="section__sub" data-i18n="places_sub">
+              Города, побережья и лайнеры, где каждая деталь работает на впечатление: от первого
+              вида из окна до последнего вечера поездки.
+            </p>
+          </header>
+          <div class="places__grid">
+            <figure class="place-card">
+              <img src="images/place-mediterranean-santorini.jpg" alt="Санторини и Средиземное море" loading="lazy" decoding="async" />
+              <figcaption data-i18n="place1">Средиземноморье</figcaption>
+            </figure>
+            <figure class="place-card">
+              <img src="images/place-europe-paris.jpg" alt="Эйфелева башня и городской маршрут по Европе" loading="lazy" decoding="async" />
+              <figcaption data-i18n="place2">Столицы Европы</figcaption>
+            </figure>
+            <figure class="place-card">
+              <img src="images/place-persian-gulf-dubai.jpg" alt="Дубай и современный Персидский залив" loading="lazy" decoding="async" />
+              <figcaption data-i18n="place3">Персидский залив</figcaption>
+            </figure>
+            <figure class="place-card">
+              <img src="images/place-coast-islands-santorini.jpg" alt="Побережье и острова Греции" loading="lazy" decoding="async" />
+              <figcaption data-i18n="place4">Побережье и острова</figcaption>
+            </figure>
+            <figure class="place-card">
+              <img src="images/place-sea-city-istanbul.jpg" alt="Стамбул у Босфора" loading="lazy" decoding="async" />
+              <figcaption data-i18n="place5">Город у моря</figcaption>
+            </figure>
+            <figure class="place-card">
+              <img src="images/place-travel-documents.jpg" alt="Паспорта и документы для поездки" loading="lazy" decoding="async" />
+              <figcaption data-i18n="place6">Виза и документы</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="cruises" aria-labelledby="cruises-title">
+        <div class="wrap wrap--split">
+          <div class="split__text">
+            <header class="section__head section__head--left">
+              <h2 id="cruises-title" data-i18n="cruises_title">Круиз на лайнере: несколько стран без переездов</h2>
+              <p class="section__sub" data-i18n="cruises_sub">
+                Средиземноморье или Ближний Восток: завтраки и ужины на борту, бассейны, шоу и
+                новые города по расписанию. Подскажем, какую каюту выбрать, какие пакеты нужны, а
+                от каких можно спокойно отказаться.
+              </p>
+            </header>
+            <ul class="checks">
+              <li data-i18n="cruise_li1">Сравним лайнеры, даты и маршруты под ваш отпуск</li>
+              <li data-i18n="cruise_li2">Покажем, что входит в стоимость и где возможны доплаты</li>
+              <li data-i18n="cruise_li3">Добавим страховку, трансферы и багаж только там, где это нужно</li>
+            </ul>
+          </div>
+          <figure class="split__visual">
+            <img
+              src="images/brandon-nelson-L4v4T5aDtnE-unsplash.jpg"
+              alt="Палуба круизного лайнера с видом на море"
+              width="2000"
+              height="3000"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section--dark" id="video" aria-labelledby="video-title">
+        <div class="wrap">
+          <header class="section__head section__head--on-dark">
+            <h2 id="video-title" data-i18n="video_title">Почувствуйте атмосферу до бронирования</h2>
+            <p class="section__sub" data-i18n="video_sub">
+              Набережные, вечерние прогулки, отели, лайнеры и реальные детали маршрутов — чтобы вы
+              выбирали поездку не по обещаниям, а по ощущению.
+            </p>
+          </header>
+          <div class="video-grid">
+            <div class="video-frame">
+              <blockquote
+                class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/reel/DOOQYZQjNRg/"
+                data-instgrm-version="14"
+              >
+                <a href="https://www.instagram.com/reel/DOOQYZQjNRg/" target="_blank" rel="noopener noreferrer">
+                  View this post on Instagram
+                </a>
+              </blockquote>
+            </div>
+            <div class="video-frame">
+              <blockquote
+                class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/reel/DIT2ATGqiaL/"
+                data-instgrm-version="14"
+              >
+                <a href="https://www.instagram.com/reel/DIT2ATGqiaL/" target="_blank" rel="noopener noreferrer">
+                  View this post on Instagram
+                </a>
+              </blockquote>
+            </div>
+            <div class="video-frame">
+              <blockquote
+                class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/reel/DVbK5zDCHqV/"
+                data-instgrm-version="14"
+              >
+                <a href="https://www.instagram.com/reel/DVbK5zDCHqV/" target="_blank" rel="noopener noreferrer">
+                  View this post on Instagram
+                </a>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="wrap wrap--narrow">
+          <header class="section__head">
+            <h2 id="contact-title" data-i18n="contact_title">Расскажите, каким должен быть ваш отпуск</h2>
+            <p class="section__sub" data-i18n="contact_sub">
+              Оставьте контакты и пару пожеланий — подготовим 2–3 варианта маршрута с ориентиром по
+              стоимости. Свяжемся по делу и в удобное для вас время.
+            </p>
+          </header>
+
+          <form class="form" id="lead-form" novalidate>
+            <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <div class="field">
+              <label for="name" data-i18n="label_name">Имя</label>
+              <input id="name" name="name" type="text" autocomplete="name" required maxlength="120" />
+            </div>
+            <div class="field">
+              <label for="phone" data-i18n="label_phone">Телефон</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                inputmode="tel"
+                required
+                maxlength="17"
+                data-i18n-placeholder="ph_phone"
+                placeholder="+998 …"
+                value="+998 "
+              />
+            </div>
+            <div class="field">
+              <label for="countries" data-i18n="label_trip">Куда, когда и в каком формате хотите поехать</label>
+              <textarea
+                id="countries"
+                name="countries"
+                rows="4"
+                required
+                maxlength="2000"
+                data-i18n-placeholder="ph_trip"
+                placeholder="Например: Италия в мае, 10 ночей, из Ташкента, комфортный отель, бюджет средний+"
+              ></textarea>
+            </div>
+
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+            <button type="submit" class="btn btn--primary btn--block" id="form-submit" data-i18n="submit">
+              Получить варианты маршрута
+            </button>
+            <p class="form__fineprint" data-i18n="fineprint">
+              Нажимая кнопку, вы соглашаетесь, что мы используем контакты только для связи по вашей заявке.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap site-footer__inner">
+        <div class="site-footer__brand">
+          <img src="pnglogos/xwhite.png" width="40" height="40" alt="" decoding="async" />
+          <span>travelx</span>
+        </div>
+        <p class="site-footer__meta">
+          <span data-i18n="footer1">Узбекистан · международные туры, круизы и индивидуальные маршруты</span><br />
+          <span data-i18n="footer2">TravelX — когда хочется путешествовать красиво, спокойно и без лишней суеты</span>
+        </p>
+        <span class="site-footer__signature">[verodevs]</span>
+      </div>
+    </footer>
+
+    <script>
+      window.TravelXTelegram = {
+        // Вставьте сюда реквизиты Telegram-бота для GitHub Pages.
+        // Пример BOT_TOKEN: "1234567890:AAExampleTokenHere"
+        // Пример CHAT_ID: "-1001234567890" или "123456789"
+        BOT_TOKEN: "8846872758:AAHmNnDmoDXm1Ihku8mUe7TMvYVpkrodvDI",
+        CHAT_ID: "-1003875862360",
+      };
+    </script>
+    <script src="main.js" defer></script>
+    <script async src="https://www.instagram.com/embed.js"></script>
+  </body>
+</html>
