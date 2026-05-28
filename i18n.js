@@ -4,9 +4,9 @@
 
   var STR = {
     ru: {
-      meta_title: "TravelX — авторские туры и круизы из Узбекистана",
+      meta_title: "TravelX — туры, круизы и визовая поддержка из Узбекистана",
       meta_desc:
-        "Персональный подбор туров, отелей, перелётов и круизов из Ташкента. Продуманные маршруты по Европе, Ближнему Востоку и морю с прозрачной сметой.",
+        "Туры из Ташкента, круизы, отели, перелёты, трансферы, визовая поддержка и документы. TravelX подбирает маршруты по Европе, Ближнему Востоку и морю.",
       skip: "К форме заявки",
       logo_aria: "TravelX — на главную",
       lang_aria: "Язык сайта",
@@ -87,9 +87,9 @@
         "Сайт открыт без сервера. Запустите npm start в папке проекта и откройте http://localhost:3333",
     },
     uz: {
-      meta_title: "TravelX — Oʻzbekistondan mualliflik turlari va kruizlar",
+      meta_title: "TravelX — Oʻzbekistondan turlar, kruizlar va viza yordami",
       meta_desc:
-        "Toshkentdan turlar, mehmonxonalar, parvozlar va kruizlarni shaxsiy tanlash. Yevropa, Yaqin Sharq va dengiz yoʻnalishlari bo‘yicha puxta marshrut va shaffof smeta.",
+        "Toshkentdan turlar, kruizlar, mehmonxonalar, parvozlar, transferlar, viza bo‘yicha yordam va hujjatlar. TravelX Yevropa, Yaqin Sharq va dengiz yo‘nalishlarini tanlaydi.",
       skip: "Ariza formasiga",
       logo_aria: "TravelX — bosh sahifa",
       lang_aria: "Sayt tili",

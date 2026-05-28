@@ -1,0 +1,17 @@
+{
+  "name": "TravelX",
+  "short_name": "TravelX",
+  "description": "Авторские туры, круизы, визовая поддержка и документы для путешествий из Узбекистана.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffaf5",
+  "theme_color": "#5b171b",
+  "icons": [
+    {
+      "src": "pnglogos/icon@4x.png",
+      "sizes": "1300x1300",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
